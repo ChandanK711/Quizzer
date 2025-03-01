@@ -42,6 +42,8 @@
     position: relative;
     background-color:rgba(0, 0, 0, 0.859);
     height: 7.5vh;
+    top:0;
+    left:0;
     width: 100%;
     color: white;
     font-weight: 400;
@@ -49,6 +51,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
+    padding:0 15px;
     animation: slideIn2 2s ease-out;
     
    
@@ -75,10 +78,16 @@
 
 
 @media (max-width: 768px) {
+   .nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
     .nav-items {
-        flex-direction: row;
-        text-align: center;
         width: 100%;
+        justify-content: center;
+        gap: 20px;
     }
 }
 
@@ -259,6 +268,7 @@ button:hover{
     padding: 5px;
     height: 70%;
     width: 90%;
+    max-width: 600px;
     gap: 5px;
     justify-content: center;
 }
